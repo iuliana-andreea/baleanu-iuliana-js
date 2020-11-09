@@ -28,3 +28,43 @@ console.warn(`
   Afiseaza diferenta de varsta dintre tine si persoana.
 `);
 console.log(`Diferenta este ${Math.abs(33 - accessor('Age'))}.`);
+
+//TEMA
+console.warn(`
+  Afiseaza anul de nastere al persoanei folosind anul curent.
+`);
+let currentYear = new Date().getFullYear();
+
+console.log(currentYear - accessor('Age'));
+
+console.warn(`
+  Afiseaza propozitia “Ma numesc xxx si am yy ani si m-am nascut acum aa ani.”
+`);
+console.log(`
+  Ma numesc ${accessor('Name')} si am ${accessor(
+  'Age',
+)} ani si m-am nascut acum ${accessor('Age')} ani.
+`);
+
+console.warn(`
+  Folosind accesorul afiseaza numele persoanei.
+`);
+console.log(accessor('Name'));
+
+console.warn(`
+  Afiseaza varsta persoanei.
+`);
+console.log(accessor('Age'));
+
+console.warn(`
+  Afiseaza anul de nastere al persoanei folosind anul curent.
+`);
+
+console.log(currentYear - accessor('Age'));
+
+console.warn(`
+  Afiseaza propozitia “Ma numesc xxx yyy si am aa ani!”
+`);
+console.log(`
+  Ma numesc ${accessor('Name')} si am ${accessor('Age')} ani!
+`);
