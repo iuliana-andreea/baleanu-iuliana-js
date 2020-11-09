@@ -1,4 +1,5 @@
 let testNumber = prompt('Introdu un numar: ');
+let limitNumber = prompt('Introdu limita superioara: ');
 
 if (testNumber === null || testNumber === '' || isNaN(testNumber)) {
   testNumber = 7;
@@ -6,7 +7,7 @@ if (testNumber === null || testNumber === '' || isNaN(testNumber)) {
   console.warn(`Nu ai introdus un numar. Se va folosi numarul ${testNumber}.`);
 }
 
-for (let i = 0; i <= 100; i++) {
+for (let i = 0; i <= limitNumber; i++) {
   console.log(i);
   if (i % testNumber !== 0) {
     continue;
